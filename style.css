@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Assistant, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica, Arial, sans-serif;
+}
+
+header {
+  display: flex;
+  background-color: #ffffff;
+  height: 80px;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgb(134, 127, 127);
+  /* position: fixed;
+    width: 100%;
+    top: 0; */
+}
+
+#logo-img {
+  height: 45px;
+}
+
+.logo {
+  margin-left: 4%;
+}
+
+.action-bar {
+  margin-right: 4%;
+}
+
+.nav-bar {
+  display: flex;
+  min-width: 500px;
+  justify-content: space-evenly;
+}
+
+.nav-bar a {
+  font-size: 14px;
+  letter-spacing: 0.3px;
+  color: #282c3f;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 27.5px 0;
+  border-bottom: 5px solid #ffffff; /*given white becuase it will not move */
+}
+
+.nav-bar a:hover {
+  /* just added color but it will look like we have added full border */
+  border-bottom: 5px solid #f54e77;
+}
+
+.nav-bar a sup {
+  color: #ff3f6c;
+  font-size: 10px;
+}
+
+.search-bar {
+  display: flex;
+  height: 40px;
+  min-width: 200px;
+  width: 30%;
+  align-items: center;
+}
+
+.search-icon {
+  height: 20px;
+  padding: 10px; /*search icon inside input */
+  box-sizing: content-box;
+
+  background-color: #f5f5f6;
+  color: #282c3f;
+  border-radius: 4px 0 0 4px;
+}
+
+.search-input {
+  color: #696e79;
+  background-color: #f5f5f6;
+  flex-grow: 1;
+  height: 40px;
+  border: 0;
+  outline: none;
+  padding-left: 10px;
+  border-radius: 0 4px 4px 0;
+}
+
+.action-bar {
+  display: flex;
+  justify-content: space-evenly;
+  min-width: 200px;
+}
+
+.action-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: black;
+  text-decoration: none;
+}
+
+/* main section  started */
+
+main {
+  /* margin-top: 8%; */
+}
+
+.banner-container {
+  margin: 40px 0;
+}
+
+.banner-img {
+  width: 100%;
+}
+
+.category-heading {
+  text-transform: uppercase;
+  color: #3e4152;
+  letter-spacing: 0.15em;
+  font-size: 1.8em;
+  margin: 50px 0 10px 30px;
+  max-height: 5em;
+  font-weight: 700;
+}
+
+.category-items,
+.all-items-container {
+  width: 80%;
+  margin: 50px 10%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.sale-item {
+  width: 247px;
+}
+
+/* js main */
+
+.all-items-container {
+  margin: 40px 10%;
+  width: 80%;
+}
+.item-container {
+  margin: 10px;
+  width: 250px;
+}
+.item-img {
+  width: 100%;
+}
+.rating {
+  font-size: 12px;
+  font-weight: 700;
+}
+.company-name {
+  font-size: 16px;
+  font-weight: 700;
+  color: #282c3f;
+  margin: 15px 0 6px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.item-name {
+  color: #535766;
+  font-size: 14px;
+  line-height: 1;
+  /* margin-bottom: 0;
+    margin-top: 0; */
+  font-weight: 400;
+  display: block;
+  overflow: hidden; /*for hiding extra text*/
+  text-overflow: ellipsis; /*triple ... for extra text*/
+  white-space: nowrap; /*have to wrap also */
+}
+.price {
+  font-size: 14px;
+  list-style: 15px;
+  color: #282c3f;
+  margin-top: 8px;
+  white-space: nowrap;
+}
+.current-price {
+  font-size: 14px;
+  font-weight: 700;
+  color: #282c3f;
+}
+.original-price {
+  text-decoration: line-through;
+  color: #7e818c;
+  font-weight: 400;
+  margin-left: 5px;
+  font-size: 11px;
+}
+.discount {
+  color: #ff905a;
+  font-weight: 400;
+  margin-left: 5px;
+  font-size: 11px;
+}
+.btn-bag {
+  margin-top: 8px;
+  font-size: 18px;
+  padding: 2px 0;
+  background-color: rgb(129, 251, 129);
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.bag-item-count {
+  background-color: #f16565;
+  white-space: nowrap;
+  text-align: center;
+  line-height: 18px;
+  padding: 0 6px;
+  height: 18px;
+  position: relative;
+  border-radius: 50%;
+  font-size: 12px;
+  color: #fff;
+  left: 13px;
+  top: -44px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/*-----------------------------footer container started ---------*/
+
+.footer-container {
+  padding: 30px 0 40px 0;
+  background: #fafbfc;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-column h3 {
+  color: #282c3f;
+  font-size: 14px;
+  text-transform: capitalize;
+  margin-bottom: 15px;
+}
+
+.footer-column a {
+  color: #696b79;
+  font-size: 14px;
+  text-decoration: none;
+  padding-bottom: 5px;
+  text-transform: capitalize;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2%;
+}
