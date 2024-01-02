@@ -13,9 +13,10 @@ header {
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid rgb(134, 127, 127);
-  /* position: fixed;
+  position: fixed;
     width: 100%;
-    top: 0; */
+    top: 0;
+    overflow: hidden;
 }
 
 #logo-img {
@@ -27,8 +28,10 @@ header {
 }
 
 .action-bar {
+  align-items: center;
   margin-right: 4%;
 }
+
 
 .nav-bar {
   display: flex;
@@ -100,10 +103,15 @@ header {
   text-decoration: none;
 }
 
+.only-bag{
+  padding-top: 18px;
+}
+
 /* main section  started */
 
 main {
-  /* margin-top: 8%; */
+  margin-top: 8%;
+  overflow: hidden;
 }
 
 .banner-container {

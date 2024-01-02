@@ -1,0 +1,28 @@
+/* jab humara width 1020px se choti hogi toh ye kam karega */
+@media screen and (max-width: 1020px) {
+  .nav-bar{
+    display: none;
+  }
+}
+
+
+@media screen and (max-width: 492px) {
+ #profile{
+  display: none;
+ }
+ #whislist{
+  display: none;
+ }
+ .name{
+  display: none;
+ }
+.action-container{
+  position: fixed;
+}
+ .bag{
+  position: fixed;
+ }
+ .banner-container{
+  margin-top: 20%;
+ }
+}

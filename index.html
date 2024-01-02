@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css">
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
       <!-- alt shift down duplicate  -->
-    <title>Myntra</title>
+    <title>Myntra-clone</title>
   </head>
   <body>
 
@@ -35,18 +36,19 @@
       </div>
 
       <div class="action-bar">
+        
         <div class="action-container">
-          <span class="material-symbols-outlined action-icon">person</span>
-          <span class="action-name">Profile</span>
+          <span class="material-symbols-outlined action-icon" id="profile">person</span>
+          <span class="action-name name">Profile</span>
         </div>
 
         <div class="action-container">
-          <span class="material-symbols-outlined action-icon">favorite</span>
-          <span class="action-name">Whislist</span>
+          <span class="material-symbols-outlined action-icon" id="whislist">favorite</span>
+          <span class="action-name name" >Whislist</span>
         </div>
 
-        <a class="action-container" href="./bag.html">
-          <span class="material-symbols-outlined action-icon">local_mall</span>
+        <a class="action-container" id="bag" href="./bag.html">
+          <span class="material-symbols-outlined action-icon only-bag">local_mall</span>
           <span class="action-name">Bag</span>
           <span class="bag-item-count">0</span>
         </div>
@@ -73,7 +75,6 @@
           <a href="#">Gift Card</a>
           <a href="#">Myntra Insider</a>
         </div>
-
 
         <div class="footer-column">
           <h3>CUSTOMER POLICIES</h3>
